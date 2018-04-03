@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { GooglePlus } from '@ionic-native/google-plus';
+import { AngularFirestore } from 'angularfire2/firestore';
+import firebase from 'firebase'
 
 
 @Component({
