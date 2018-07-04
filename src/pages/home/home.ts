@@ -19,10 +19,12 @@ export class HomePage {
   }
 
   Login() {
-    this.googlePlus.login({ 'webClientId': '771015087278-q9qbe38j8u5ad2rmuj2po1u9uvocg0d7.apps.googleusercontent.com', 'offline': true }).then((obj) => {
-      alert(obj);
+    this.googlePlus.login({ 'webClientId': '808832611356-9t7qrochbt1r0r3k69fgsioufd013go2.apps.googleusercontent.com', 'offline': true }).then((obj) => {
+      alert(JSON.stringify(obj));
+      console.log(obj);
     }).catch((msg) => {
-      alert(msg)
+      alert(JSON.stringify(msg));
+      console.log(msg);
     });
   }
 
